@@ -63,9 +63,9 @@ export default class TransactionList extends Vue {
         <td>{{ transaction.currency }}</td>
         <td>{{ getDate(transaction.createdAt) }}</td>
         <td>
-          <base-link
+          <router-link
             :to="{ name: 'Transaction', params: { id: transaction.id } }"
-            >view</base-link
+            >view</router-link
           >
         </td>
       </tr>
